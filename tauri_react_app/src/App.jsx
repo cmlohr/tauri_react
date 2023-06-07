@@ -6,7 +6,14 @@ import { AppShell, Navbar, Header, MediaQuery, Burger, ActionIcon, Group } from 
 import { MantineProvider } from '@mantine/core';
 import { SunIcon, MoonIcon } from '@modulz/radix icon';
 import { createStyles, useMantineTheme } from '@mantine/styles';
+import { MemoryRouter, NavLink, Route, Routes } from 'react-router-dom';
 
+import { invoke } from '@tauri-apps/api/tauri';
+
+import Home from './pages/Home';
+import Settings from './pages/Settings';
+
+import TestExamplePage from './pages/TestExamplePage';
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
