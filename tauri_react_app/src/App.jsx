@@ -2,6 +2,11 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/tauri";
 import "./App.css";
+import { AppShell, Navbar, Header, MediaQuery, Burger, ActionIcon, Group } from '@mantine/core';
+import { MantineProvider } from '@mantine/core';
+import { SunIcon, MoonIcon } from '@modulz/radix icon';
+import { createStyles, useMantineTheme } from '@mantine/styles';
+
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
